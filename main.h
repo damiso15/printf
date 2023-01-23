@@ -19,10 +19,10 @@ typedef struct print_type
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int _printf_c.c(va_list ap);
-int _printf_s.c(va_list ap);
-int _printf_d.c(va_list ap);
-int _printf_i.c(va_list ap)
-int _printf_b.c(va_list ap);
+int _printf_c(va_list ap);
+int _printf_s(va_list ap);
+int _printf_d(va_list ap);
+int _printf_i(va_list ap);
+int _printf_b(va_list ap);
 
 #endif

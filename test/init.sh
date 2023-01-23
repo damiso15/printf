@@ -1,6 +1,9 @@
 #!/bin/bash
 # a scripts that compiles all the test case files
 
+# copy the test file to the main directory
+cp test/main.c .
+
 # compiling the files with all flags
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o print_test
 
@@ -8,4 +11,4 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o print_test
 ./print_test
 
 # delete the compiled file
-rm print_test
+rm print_test main.c

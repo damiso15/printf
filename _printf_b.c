@@ -5,12 +5,12 @@
  * @ap: unsigned int being converted to binary
  * Return: the total number of the printed number
  */
-int _printf_b.c(va_list ap)
+int _printf_b(va_list ap)
 {
 	int counter, num2, *arr;
 	unsigned int num1, num3;
 
-	num1 = va_arg(bin, unsigned int), counter = 0;
+	num1 = va_arg(ap, unsigned int), counter = 0;
 
 	while (num1 / 2 != 0)
 	{
