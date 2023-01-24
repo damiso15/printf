@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_R - a function that prints strings in rot13 format to stdout
+ * _printf_R - a function that prints strings in rot13 format to stdout.
  * @ap: the string to convert to rot13 format
  * Return: counter
  */
