@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_S - a function that prints strings and ASCII characters to stdout
+ * _printf_S - a function that prints strings and ASCII characters to stdout.
  * @ap: the string to print
  * Return: counter
  */

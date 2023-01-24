@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * format_checker - a function to check if the format specifier is valid
+ * format_checker - a function to check if the format specifier is valid.
  * @format: the format to check
  * Return: a pointer to the format
  */
