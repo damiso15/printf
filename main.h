@@ -7,6 +7,9 @@
 #include <stdarg.h>
 #include <limits.h>
 
+/* macros */
+#define BUFSIZ 1024
+
 /**
  * struct _print - a structure to define our printf value types
  * @print_type: the type to print

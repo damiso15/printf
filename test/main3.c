@@ -25,7 +25,7 @@ int main3(void)
 	elen = printf("Expected   : %c\n", c);
 	alen = _printf("Actual     : %c\n", c);
 	printf("Expected   : %i\n", elen);
-	printf("Actual     : %i\n", alen);
+	_printf("Actual     : %i\n", alen);
 	printf("Expected   : %cc\n", 'a');
 	_printf("Actual     : %cc\n", 'a');
 	printf("Expected   : %c\n", 53);
@@ -47,13 +47,13 @@ int main3(void)
 	elen = printf("%s", "");
 	alen = _printf("%s", "");
 	printf("Expected   : %i\n", elen);
-	printf("Actual     : %i\n", alen);
+	_printf("Actual     : %i\n", alen);
 	printf("Expected   : %sschool\n", "holberton");
 	_printf("Actual     : %sschool\n", "holberton");
 	elen = printf("Expected: %c%%%c%%%%%s%c%s%d\n", INT_MAX, INT_MIN, "hello", 0, "holberton", 0);
 	alen = _printf("Actual  : %c%%%c%%%%%s%c%s%d\n", INT_MAX, INT_MIN, "hello", 0, "holberton", 0);
 	printf("Expected: %d\n", elen);
-	printf("Actual  : %d\n", alen);
+	_printf("Actual  : %d\n", alen);
 	printf("Expected  %i %d\n", 0032, 0032);
 	_printf("Actual %i %d \n\n\n", 0032, 0032);
 	return (0);

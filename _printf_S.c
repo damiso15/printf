@@ -14,7 +14,7 @@ int _printf_S(va_list ap)
 	string = va_arg(ap, char *);
 
 	if (string == NULL)
-		string = "(nill)";
+		string = "(nil)";
 
 	for (num = 0; string[num]; num++)
 	{
