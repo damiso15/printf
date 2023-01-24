@@ -14,7 +14,7 @@ int main1(void)
 	unsigned int ui;
 	void *addr;
 
-	_printf("\n TESTS BEGINS\n\n\n");
+	_printf(" TESTS BEGINS\n\n\n");
 	_printf("\nSTART OF TEST1\n");
         _printf("=====================\n");
 	len = _printf("Let's try to printf a simple sentence.\n");
@@ -47,7 +47,7 @@ int main1(void)
 /*	printf("Hello %r\n", "Hello"); */
 	_printf("%S\n", "Holberton\nSchool");
 /*	printf("%S\n", "Holberton\nSchool"); */
-	_printf("%R\n", "Holberton School");
+	_printf("%R\n\n\n", "Holberton School");
 /*	printf("%R\n", "Holberton School"); */
 	return (0);
 }
