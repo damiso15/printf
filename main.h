@@ -28,5 +28,9 @@ int _printf_u(va_list ap);
 int _printf_o(va_list ap);
 int _printf_x(va_list ap);
 int _printf_X(va_list ap);
+int _printf_S(va_list ap);
+int _printf_p(va_list ap);
+int _printf_r(va_list ap);
+int _printf_R(va_list ap);
 
 #endif
