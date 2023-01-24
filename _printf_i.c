@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_i - a function that prints an integer in base 10 to stdout
+ * _printf_i - a function that prints an integer in base 10 to stdout.
  * @ap: the base 10 integer to print
  * Return: the total number of the integer
  */

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_d - a function that prints a decimal number in base 10 to stdout
+ * _printf_d - a function that prints a decimal number in base 10 to stdout.
  * @ap: the base 10 decimal to print
  * Return: the total number of the decimals
  */
