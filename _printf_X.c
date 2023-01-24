@@ -12,7 +12,7 @@ int _printf_X(va_list ap)
 	int counter;
 
 	num1 = va_arg(ap, unsigned int);
-	hex = 'R' - ':', num2 = 268435456;
+	hex = 'A' - ':', num2 = 268435456;
 	arr[0] = num1 / num2;
 
 	for (num3 = 1; num3 < 8; num3++)
