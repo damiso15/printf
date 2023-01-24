@@ -7,10 +7,10 @@ int main(void)
 	char *str = NULL;
 	printf("START OF TEST\n");
 	printf("=====================\n");
-	printf("printf(NULL)  : %d\n", printf(str));
+	printf("printf(NULL)  : %d\n", printf("%s", str));
 	printf("_printf(NULL) : %d\n", _printf(str));
-	printf("printf(\"%\") : %d\n", printf("%"));
-	printf("_printf(\"%\"): %d\n", _printf("%"));
+	printf("printf(\"%%\") : %d\n", printf("%%"));
+	printf("_printf(\"%%\"): %d\n", _printf("%"));
 	str = "hello, world";
 	printf("=====================\n");
 	printf("*****CHAR*****\n");
@@ -45,8 +45,8 @@ int main(void)
 	printf("Actual     : %i\n", alen);
 	printf("Expected   : %sschool\n", "holberton");
 	_printf("Actual     : %sschool\n", "holberton");
-	elen = printf("Expected: %c%%%c%%%%%s%c%s%s\n", INT_MAX, INT_MIN, "hello", 0, "holberton", 0);
-	alen = _printf("Actual  : %c%%%c%%%%%s%c%s%s\n", INT_MAX, INT_MIN, "hello", 0, "holberton", 0);
+	elen = printf("Expected: %c%%%c%%%%%s%c%s%d\n", INT_MAX, INT_MIN, "hello", 0, "holberton", 0);
+	alen = _printf("Actual  : %c%%%c%%%%%s%c%s%d\n", INT_MAX, INT_MIN, "hello", 0, "holberton", 0);
 	printf("Expected: %d\n", elen);
 	printf("Actual  : %d\n", alen);
 	printf("Expected  %i %d\n", 0032, 0032);
