@@ -10,8 +10,8 @@ int main3(void)
 	int alen, elen;
 	char c = 'z';
 	char *str = NULL;
-	printf("START OF TEST\n");
-	printf("=====================\n");
+	_printf("\nSTART OF TEST3\n");
+	_printf("=====================\n");
 	printf("printf(NULL)  : %d\n", printf("%s", str));
 	printf("_printf(NULL) : %d\n", _printf(str));
 	printf("printf(\"%%\") : %d\n", printf("%%"));

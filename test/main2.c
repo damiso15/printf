@@ -7,7 +7,9 @@
  */
 int main2(void)
 {
-    _printf("\n\n\nThis is Binary Test\n%b\n", 98);
-    return (0);
+	_printf("\nSTART OF TEST2\n");
+        _printf("=====================\n");
+	_printf("\nThis is Binary Test\n%b\n\n\n", 98);
+	return (0);
 }
 

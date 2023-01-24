@@ -14,6 +14,9 @@ int main1(void)
 	unsigned int ui;
 	void *addr;
 
+	_printf("\n TESTS BEGINS\n\n\n");
+	_printf("\nSTART OF TEST1\n");
+        _printf("=====================\n");
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
 	ui = (unsigned int)INT_MAX + 1024;

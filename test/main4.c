@@ -7,6 +7,9 @@
  */
 int main4(void)
 {
-	_printf("\n\n\nThis is Non Printable Characters test: %S\n", "Best\nSchool");
+	_printf("\nSTART OF TEST4\n");
+        _printf("=====================\n");
+	_printf("\nThis is Non Printable Characters test: %S\n\n", "Best\nSchool");
+	_printf("\n TESTS ENDS \n");
 	return (0);
 }
