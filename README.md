@@ -29,6 +29,7 @@ A recreation of the printf function in C. it is a mini version of C Language Fun
 
 ## Authors ##
 Sonaike Oluwadamilola - [github profile](https://github.com/damiso15 "damiso15")
+Chiazor Kizito - [github profile](https://github.com/Kizito24 "Kizito24")
 
 ## License ##
 MIT License
