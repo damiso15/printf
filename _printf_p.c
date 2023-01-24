@@ -31,6 +31,12 @@ int _printf_p(va_list ap)
 	counter = 2, num3 = 1152921504606846976;
 	arr[0] = num2 / num3;
 
+	for (num1 = 1; num1 < 16; num1++)
+	{
+		num3 /= 16;
+		arr[num1] = (num2 / num3) % 16;
+	}
+
 	for (num1 = 0; num1 < 16; num1++)
 	{
 		sum += arr[num1];

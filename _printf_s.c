@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_s - a function that prints a string to stdout
+ * _printf_s - a function that prints a string to stdout.
  * @ap: the string to print
  * Return: 0 as (Success)
  */
