@@ -51,7 +51,7 @@ int _printf(const char *format, ...)
 	num = 0;
 	while (format && format[num])
 	{
-		counter = 0
+		counter = 0;
 		if (format[num] != '%')
 		{
 			_putchar(format[num]);

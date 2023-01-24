@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _printf_x - a function that prints lowercase hexadecimal to stdout
+ * _printf_X - a function that prints lowercase hexadecimal to stdout
  * @ap: the input character to convert to hexadecimal
  * Return: the counter
  */
-int _printf_x(va_list ap)
+int _printf_X(va_list ap)
 {
 	unsigned int arr[8], num1, num2, num3, sum;
 	char hex;
