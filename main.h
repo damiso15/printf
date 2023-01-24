@@ -33,4 +33,6 @@ int _printf_p(va_list ap);
 int _printf_r(va_list ap);
 int _printf_R(va_list ap);
 
+int (*variadic_function)(va_list);
+
 #endif
