@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_p - a function that prints the address of a memory to stdout
+ * _printf_p - a function that prints the address of a memory to stdout.
  * @ap: the memory address to print
  * Return: the counter
  */

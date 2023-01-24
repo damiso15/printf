@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_r - a function that prints a string in reverse to stdout
+ * _printf_r - a function that prints a string in reverse to stdout.
  * @ap: the string to reverse
  * Return: counter
  */
