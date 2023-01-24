@@ -1,6 +1,11 @@
 #include "main.h"
 
-int main(void)
+/**
+ * main3 - Entry point
+ *
+ * Return: Always 0
+ */
+int main3(void)
 {
 	int alen, elen;
 	char c = 'z';
