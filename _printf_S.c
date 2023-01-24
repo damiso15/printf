@@ -14,12 +14,12 @@ int _printf_S(va_list ap)
 	string = va_arg(ap, char *);
 
 	if (string == NULL)
-		sring = "(nill)";
+		string = "(nill)";
 
 	for (num = 0; string[num]; num++)
 	{
 		counter = 0;
-		if (string[num] < 32 || str[num] >= 127)
+		if (string[num] < 32 || string[num] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');

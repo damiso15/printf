@@ -12,9 +12,9 @@ int _printf_o(va_list ap)
 
 	num2 = va_arg(ap, unsigned int), num3 = num2;
 
-	while (n / 8 != 0)
+	while (num2 / 8 != 0)
 	{
-		n /= 8;
+		num2 /= 8;
 		counter++;
 	}
 	counter++;

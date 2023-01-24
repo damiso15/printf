@@ -20,7 +20,7 @@ int _printf_p(va_list ap)
 		counter = 0;
 		for (num1 = 0; string[num1]; num1++)
 		{
-			_putchar(str[num1]);
+			_putchar(string[num1]);
 			counter++;
 		}
 		return (counter);
