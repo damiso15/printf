@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -11,10 +12,10 @@ int main7(void)
 {
 	int len, len2;
 
-	_printf("\nSTART OF TEST6\n");
+	_printf("\nSTART OF TEST7\n");
         _printf("=====================\n");
-	len = _printf("%");
-	len2 = printf("%");
+	len = _printf("%d", INT_MIN);
+	len2 = printf("%d", INT_MIN);
 	fflush(stdout);
 	if (len != len2)
 	{

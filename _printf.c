@@ -40,7 +40,7 @@ int (*format_checker(const char *format))(va_list)
  */
 int _printf(const char *format, ...)
 {
-	unsigned int num, counter;
+	int num, counter;
 	va_list ap;
 
 	if (format == NULL)

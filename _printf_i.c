@@ -1,42 +1,33 @@
 #include "main.h"
 
 /**
- * _printf_i - a function that prints an integer in base 10 to stdout.
- * @i: the base 10 integer to print
- * Return: the total number of the integer
+ * _printf_d - a function that prints a decimal number in base 10 to stdout.
+ * @i: the base 10 decimal to print
+ * Return: the total number of the decimals
  */
 int _printf_i(va_list i)
 {
-	int arr[10], num1, num2, num3, sum, counter;
+	int num1, result, len;
+	unsigned int num2;
 
-	num3 = va_arg(i, int);
-	counter = 0;
+	num1 = va_arg(i, int), result = 1, len = 0;
 
-	if (num3 < 0)
+	if (num1 < 0)
 	{
-		num3 *= -1;
-		_putchar('-');
-		counter++;
+		len += _putchar('-');
+		num2 = num1 * -1;
 	}
+	else
+		num2 = num1;
 
-	num2 = 1000000000;
-	arr[0] = num3 / num2;
+	while ((num2 / result) > 9)
+		result *= 10;
 
-	for (num1 = 1; num1 < 10; num1++)
+	while (result != 0)
 	{
-		num2 /= 10;
-		arr[num1] = (num3 / num2) % 10;
+		len += _putchar((num2 / result) + '0');
+		num2 %= result;
+		result /= 10;
 	}
-
-	sum = 0;
-	for (num1 = 0; num1 < 10; num1++)
-	{
-		sum += arr[num1];
-		if (sum != 0 || num1 == 9)
-		{
-			_putchar('0' + arr[num1]);
-			counter++;
-		}
-	}
-	return (counter);
+	return (len);
 }
