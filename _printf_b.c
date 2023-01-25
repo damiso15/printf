@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_b.c - a function to print a binary number to stdout
+ * _printf_b - a function to print a binary number to stdout
  * @bin: unsigned int being converted to binary
  * Return: the total number of the printed number
  */

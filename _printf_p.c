@@ -12,9 +12,7 @@ int _printf_p(va_list p)
 	int counter;
 	char *string;
 
-	num2 = va_arg(p, unsigned long);
-	string = "(nil)";
-
+	num2 = va_arg(p, unsigned long), string = "(nil)";
 	counter = 0;
 	if (num2 == 0)
 	{
@@ -27,9 +25,7 @@ int _printf_p(va_list p)
 	}
 	_putchar('0');
 	_putchar('x');
-
-	counter = 2, num3 = 1152921504606846976;
-	arr[0] = num2 / num3;
+	counter = 2, num3 = 1152921504606846976, arr[0] = num2 / num3;
 
 	for (num1 = 1; num1 < 16; num1++)
 	{
