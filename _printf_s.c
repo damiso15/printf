@@ -10,13 +10,11 @@ int _printf_s(va_list str)
 	char *string;
 	int len;
 
-	string = va_arg(str, char *); 
-
+	string = va_arg(str, char *);
 	if (string == NULL)
 		string = "(null)";
 
 	len = 0;
-
 	while (string[len])
 		_putchar(string[len++]);
 	return (len);

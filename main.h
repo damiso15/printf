@@ -44,6 +44,8 @@ int main1(void);
 int main2(void);
 int main3(void);
 int main4(void);
+int main5(void);
+int main6(void);
 
 int print_add(va_list add);
 int print_less(va_list less);
