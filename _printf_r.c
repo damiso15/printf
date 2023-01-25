@@ -2,15 +2,15 @@
 
 /**
  * _printf_r - a function that prints a string in reverse to stdout.
- * @ap: the string to reverse
+ * @rev: the string to reverse
  * Return: counter
  */
-int _printf_r(va_list ap)
+int _printf_r(va_list rev)
 {
 	int num, counter;
 	char *string;
 
-	string = va_arg(ap, char *);
+	string = va_arg(rev, char *);
 
 	if (string == NULL)
 		string = ")lin(";

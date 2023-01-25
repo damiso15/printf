@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * _printf_d - a function that prints a decimal number in base 10 to stdout.
- * @dig: the base 10 decimal to print
- * Return: the total number of the decimals
+ * _printf_i - a function that prints an integer in base 10 to stdout.
+ * @i: the base 10 integer to print
+ * Return: the total number of the integer
  */
-int _printf_d(va_list dig)
+int _printf_i(va_list i)
 {
 	int arr[10], num1, num2, num3, sum, counter;
 
-	num3 = va_arg(dig, int), counter = 0;
+	num3 = va_arg(i, int);
+	counter = 0;
 
 	if (num3 < 0)
 	{
@@ -27,9 +28,9 @@ int _printf_d(va_list dig)
 		arr[num1] = (num3 / num2) % 10;
 	}
 
-	sum = 0;
 	for (num1 = 0; num1 < 10; num1++)
 	{
+		sum = 0;
 		sum += arr[num1];
 		if (sum != 0 || num1 == 9)
 		{

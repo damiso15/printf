@@ -2,22 +2,22 @@
 
 /**
  * _printf_p - a function that prints the address of a memory to stdout.
- * @ap: the memory address to print
+ * @p: the memory address to print
  * Return: the counter
  */
-int _printf_p(va_list ap)
+int _printf_p(va_list p)
 {
 	unsigned int arr[16], sum, num1;
 	unsigned long num2, num3;
 	int counter;
 	char *string;
 
-	num2 = va_arg(ap, unsigned long);
+	num2 = va_arg(p, unsigned long);
 	string = "(nil)";
 
+	counter = 0;
 	if (num2 == 0)
 	{
-		counter = 0;
 		for (num1 = 0; string[num1]; num1++)
 		{
 			_putchar(string[num1]);
@@ -37,6 +37,7 @@ int _printf_p(va_list ap)
 		arr[num1] = (num2 / num3) % 16;
 	}
 
+	sum = 0;
 	for (num1 = 0; num1 < 16; num1++)
 	{
 		sum += arr[num1];

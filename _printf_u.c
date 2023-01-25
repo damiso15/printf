@@ -2,15 +2,15 @@
 
 /**
  * _printf_u - a function that prints an usigned int to stdout.
- * @ap: an unsigned int to print
+ * @un_i: an unsigned int to print
  * Return: the total number of integer
  */
-int _printf_u(va_list ap)
+int _printf_u(va_list un_i)
 {
 	unsigned int num1;
 	int num2, counter;
 
-	num1 = va_arg(ap, unsigned int), num2 = 1;
+	num1 = va_arg(un_i, unsigned int), num2 = 1;
 
 	while ((num1 / num2) > 9)
 		num2 *= 10;

@@ -2,20 +2,22 @@
 
 /**
  * _printf_s - a function that prints a string to stdout.
- * @ap: the string to print
+ * @str: the string to print
  * Return: 0 as (Success)
  */
-int _printf_s(va_list ap)
+int _printf_s(va_list str)
 {
 	char *string;
-	int num = 0;
+	int len;
 
-	string = va_arg(ap, char*);
+	string = va_arg(str, char *); 
 
 	if (string == NULL)
-		string = "(nill)";
+		string = "(null)";
 
-	for (num = 0; string[num]; )
-		_putchar(string[num++]);
-	return (0);
+	len = 0;
+
+	while (string[len])
+		_putchar(string[len++]);
+	return (len);
 }

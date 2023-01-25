@@ -2,19 +2,21 @@
 
 /**
  * _printf_i - a function that prints an integer in base 10 to stdout.
- * @ap: the base 10 integer to print
+ * @i: the base 10 integer to print
  * Return: the total number of the integer
  */
-int _printf_i(va_list ap)
+int _printf_i(va_list i)
 {
 	int arr[10], num1, num2, num3, sum, counter;
 
-	num3 = va_arg(ap, int), counter = 0;
+	num3 = va_arg(i, int);
+	counter = 0;
 
 	if (num3 < 0)
 	{
 		num3 *= -1;
-		_putchar('-'), counter++;
+		_putchar('-');
+		counter++;
 	}
 
 	num2 = 1000000000;
@@ -26,9 +28,9 @@ int _printf_i(va_list ap)
 		arr[num1] = (num3 / num2) % 10;
 	}
 
+	sum = 0;
 	for (num1 = 0; num1 < 10; num1++)
 	{
-		sum = 0;
 		sum += arr[num1];
 		if (sum != 0 || num1 == 9)
 		{

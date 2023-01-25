@@ -13,9 +13,9 @@ int main3(void)
 	_printf("\nSTART OF TEST3\n");
 	_printf("=====================\n");
 	printf("printf(NULL)  : %d\n", printf("%s", str));
-	printf("_printf(NULL) : %d\n", _printf(str));
+	printf("_printf(NULL) : %d\n", _printf("%s", str));
 	printf("printf(\"%%\") : %d\n", printf("%%"));
-	printf("_printf(\"%%\"): %d\n", _printf("%"));
+	printf("_printf(\"%%\"): %d\n", _printf("%%"));
 	str = "hello, world";
 	printf("=====================\n");
 	printf("*****CHAR*****\n");

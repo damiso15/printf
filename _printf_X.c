@@ -2,16 +2,16 @@
 
 /**
  * _printf_X - a function that prints lowercase hexadecimal to stdout
- * @ap: the input character to convert to hexadecimal
+ * @upp_hex: the input character to convert to hexadecimal
  * Return: the counter
  */
-int _printf_X(va_list ap)
+int _printf_X(va_list upp_hex)
 {
 	unsigned int arr[8], num1, num2, num3, sum;
 	char hex;
 	int counter;
 
-	num1 = va_arg(ap, unsigned int);
+	num1 = va_arg(upp_hex, unsigned int);
 	hex = 'A' - ':', num2 = 268435456;
 	arr[0] = num1 / num2;
 

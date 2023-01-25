@@ -2,10 +2,10 @@
 
 /**
  * _printf_R - a function that prints strings in rot13 format to stdout.
- * @ap: the string to convert to rot13 format
+ * @rot13: the string to convert to rot13 format
  * Return: counter
  */
-int _printf_R(va_list ap)
+int _printf_R(va_list rot13)
 {
 	unsigned int num1, num2;
 	int counter;
@@ -13,7 +13,7 @@ int _printf_R(va_list ap)
 	char normal_str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char cnvt_str[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	string = va_arg(ap, char *);
+	string = va_arg(rot13, char *);
 
 	if (string == NULL)
 		string = "(nil)";

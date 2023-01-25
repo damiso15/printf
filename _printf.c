@@ -27,7 +27,7 @@ int (*format_checker(const char *format))(va_list)
 
 	for (num = 0; print[num].type != NULL; num++)
 	{
-		if (*format == *print[num].type)
+		if (*print[num].type == *format)
 			break;
 	}
 	return (print[num].variadic_function);
@@ -44,18 +44,18 @@ int _printf(const char *format, ...)
 	va_list ap;
 
 	if (format == NULL)
-		return (98);
+		return (-1);
 
 	va_start(ap, format);
-
 	num = 0;
+	counter = 0;
 	while (format && format[num])
 	{
-		counter = 0;
 		if (format[num] != '%')
 		{
 			_putchar(format[num]);
-			counter++, num++;
+			counter++; 
+			num++;
 			continue;
 		}
 		else
@@ -63,16 +63,17 @@ int _printf(const char *format, ...)
 			if (format[num + 1] == '%')
 			{
 				_putchar('%');
-				counter++, num += 2;
+				counter++;
+				num += 2;
 				continue;
 			}
 			else
 			{
 				variadic_function = format_checker(&format[num + 1]);
 				if (variadic_function == NULL)
-					return (98);
-
-				num += 2, counter += variadic_function(ap);
+					return (-1);
+				num += 2;
+				counter += variadic_function(ap);
 				continue;
 			}
 		}

@@ -2,15 +2,15 @@
 
 /**
  * _printf_o - a function that prints octal format to stdout
- * @ap: the integer to conver to octal
+ * @oct: the integer to conver to octal
  * Return: the counter
  */
-int _printf_o(va_list ap)
+int _printf_o(va_list oct)
 {
 	int *arr, num1, counter;
 	unsigned int num2, num3;
 
-	num2 = va_arg(ap, unsigned int), num3 = num2;
+	num2 = va_arg(oct, unsigned int), num3 = num2;
 
 	while (num2 / 8 != 0)
 	{
