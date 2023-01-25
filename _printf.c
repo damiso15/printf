@@ -47,14 +47,13 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(ap, format);
-	num = 0;
-	counter = 0;
+	num = 0, counter = 0;
 	while (format && format[num])
 	{
 		if (format[num] != '%')
 		{
 			_putchar(format[num]);
-			counter++; 
+			counter++;
 			num++;
 			continue;
 		}
