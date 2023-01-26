@@ -22,6 +22,8 @@ int _printf_x(va_list low_hex)
 		arr[num3] = (num1 / num2) % 16;
 	}
 
+	counter = 0;
+	sum = 0;
 	for (num3 = 0; num3 < 8; num3++)
 	{
 		sum += arr[num3];

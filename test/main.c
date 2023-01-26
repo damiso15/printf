@@ -19,5 +19,8 @@ int main(void)
 	main9();
 	main10();
 	main11();
+	main12();
+	main13();
+	main14();
 	return 0;
 }
