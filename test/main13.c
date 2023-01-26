@@ -11,7 +11,7 @@ int main13(void)
 {
 	int len, len2;
 
-	_printf("\nSTART OF TEST4\n");
+	_printf("\nSTART OF TEST13\n");
         _printf("=====================\n");
 	len = _printf("%x\n", -1024);
 	len2 = printf("%x\n", -1024);

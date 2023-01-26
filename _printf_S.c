@@ -8,7 +8,7 @@
 int _printf_S(va_list S)
 {
 	unsigned int num;
-	int counter;
+	int counter, var;
 	char *string;
 
 	string = va_arg(S, char *);
@@ -19,12 +19,18 @@ int _printf_S(va_list S)
 	counter = 0;
 	for (num = 0; string[num]; num++)
 	{
-		if (string[num] < 32 || string[num] >= 127)
+		if (string[num] < 31 || string[num] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');
 			counter += 2;
-			counter += _printf_x(S);
+			var = string[num];
+			if (var < 16)
+			{
+				_putchar('0');
+				counter++;
+			}
+			counter += _printf_S_x(var);
 		}
 		else
 		{

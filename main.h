@@ -39,6 +39,7 @@ int _printf_R(va_list rot13);
 
 int (*variadic_function)(va_list);
 int var_func_checker(char *format, int n);
+int _printf_S_x(unsigned int num);
 
 int main1(void);
 int main2(void);
