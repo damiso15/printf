@@ -47,6 +47,7 @@ int _printf(const char *format, ...)
 	va_start(ap, format), num = 0, counter = 0;
 	if (format == NULL)
 		return (-1);
+
 	while (format && format[num])
 	{
 		if (format[num] != '%')
@@ -68,12 +69,10 @@ int _printf(const char *format, ...)
 				variadic_function = format_checker(&format[num + 1]);
 				if (variadic_function == NULL)
 				{
-					_putchar(format[num]);
-					counter++, num++;
+					_putchar(format[num]), counter++, num++;
 					continue;
 				}
-				num += 2;
-				counter += variadic_function(ap);
+				num += 2, counter += variadic_function(ap);
 				continue;
 			}
 		}
