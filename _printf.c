@@ -70,7 +70,12 @@ int _printf(const char *format, ...)
 			{
 				variadic_function = format_checker(&format[num + 1]);
 				if (variadic_function == NULL)
-					return (-1);
+				{
+					_putchar(format[num]);
+		                        counter++;
+                		        num++;
+		                        continue;
+				}
 				num += 2;
 				counter += variadic_function(ap);
 				continue;

@@ -15,11 +15,13 @@ int _printf_u(va_list un_i)
 	while ((num1 / num2) > 9)
 		num2 *= 10;
 
+	counter = 0;
 	while (num2 != 0)
 	{
-		counter += _putchar(num1 / num2 + '0');
+		counter += _putchar((num1 / num2) + '0');
 		num1 %= num2;
 		num2 /= 10;
 	}
+	printf("%d\n", counter);
 	return (counter);
 }

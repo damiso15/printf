@@ -56,5 +56,7 @@ int main3(void)
 	_printf("Actual  : %d\n", alen);
 	printf("Expected  %i %d\n", 0032, 0032);
 	_printf("Actual %i %d \n\n\n", 0032, 0032);
+	_printf("%K\n");
+	_printf("%!\n");
 	return (0);
 }

@@ -48,6 +48,8 @@ int main5(void);
 int main6(void);
 int main7(void);
 int main8(void);
+int main9(void);
+int main10(void);
 
 int print_add(va_list add);
 int print_less(va_list less);

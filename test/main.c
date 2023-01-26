@@ -16,5 +16,7 @@ int main(void)
 	main6();
 	main7();
 	main8();
+	main9();
+	main10();
 	return 0;
 }
