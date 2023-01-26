@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 #include "main.h"
 
 /**
- * main7 - Entry point
+ * main11 - Entry point
  *
  * Return: 0 on success, error code otherwise
  */
-int main7(void)
+int main11(void)
 {
 	int len, len2;
 
-	_printf("\nSTART OF TEST7\n");
+	_printf("\nSTART OF TEST11\n");
         _printf("=====================\n");
-	len = _printf("%d\n", INT_MIN);
-	len2 = printf("%d\n", INT_MIN);
+	len = _printf("_printf: %\n");
+	len2 = printf(" printf:%%\n");
 	fflush(stdout);
 	if (len != len2)
 	{

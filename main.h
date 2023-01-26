@@ -38,7 +38,7 @@ int _printf_r(va_list rev);
 int _printf_R(va_list rot13);
 
 int (*variadic_function)(va_list);
-int _strlen(char *str);
+int var_func_checker(char *format, int n);
 
 int main1(void);
 int main2(void);
@@ -50,10 +50,6 @@ int main7(void);
 int main8(void);
 int main9(void);
 int main10(void);
-
-int print_add(va_list add);
-int print_less(va_list less);
-int print_space(va_list space);
-int print_sharp(va_list sharp);
+int main11(void);
 
 #endif

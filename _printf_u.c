@@ -22,6 +22,5 @@ int _printf_u(va_list un_i)
 		num1 %= num2;
 		num2 /= 10;
 	}
-	printf("%d\n", counter);
 	return (counter);
 }

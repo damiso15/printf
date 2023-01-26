@@ -13,7 +13,7 @@ int main9(void)
 
 	_printf("\nSTART OF TEST9\n");
         _printf("=====================\n");
-	len = _printf("%u", 1024);
+	len = _printf("%u\n", 1024);
 	len2 = printf("%u\n", 1024);
 	fflush(stdout);
 	if (len != len2)
