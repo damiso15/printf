@@ -18,6 +18,7 @@ int _printf_R(va_list rot13)
 	if (string == NULL)
 		string = "(nil)";
 
+	counter = 0;
 	for (num1 = 0; string[num1]; num1++)
 	{
 		for (num2 = 0; normal_str[num2]; num2++)

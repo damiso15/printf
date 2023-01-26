@@ -55,5 +55,6 @@ int main11(void);
 int main12(void);
 int main13(void);
 int main14(void);
+int main15(void);
 
 #endif
