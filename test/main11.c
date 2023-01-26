@@ -14,7 +14,7 @@ int main11(void)
 	_printf("\nSTART OF TEST11\n");
         _printf("=====================\n");
 	len = _printf("_printf: %\n");
-	len2 = printf(" printf:%%\n");
+	len2 = printf(" printf: %%\n");
 	fflush(stdout);
 	if (len != len2)
 	{

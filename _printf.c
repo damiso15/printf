@@ -44,10 +44,9 @@ int _printf(const char *format, ...)
 	int num, counter;
 	va_list ap;
 
+	va_start(ap, format), num = 0, counter = 0;
 	if (format == NULL)
 		return (-1);
-
-	va_start(ap, format), num = 0, counter = 0;
 	while (format && format[num])
 	{
 		if (format[num] != '%')
@@ -60,20 +59,21 @@ int _printf(const char *format, ...)
 		{
 			if (format[num + 1] == '%')
 			{
-				_putchar('%'), counter++, num += 2;
+				_putchar('%');
+				counter++, num += 2;
 				continue;
 			}
 			else
 			{
 				variadic_function = format_checker(&format[num + 1]);
-				if (variadic_function != format_checker(&format[num + 1]))
+				if (variadic_function == NULL)
 				{
-					_putchar(format[num]), counter++, num++;
+					_putchar(format[num]);
+					counter++, num++;
 					continue;
 				}
-				if (variadic_function == NULL)
-					return (-1);
-				num += 2, counter += variadic_function(ap);
+				num += 2;
+				counter += variadic_function(ap);
 				continue;
 			}
 		}
