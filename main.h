@@ -8,7 +8,7 @@
 #include <limits.h>
 
 /* macros */
-/* #define BUFSIZE 1024 */
+#define BUFSIZE 1024 
 
 /**
  * struct _print - a structure to define our printf value types

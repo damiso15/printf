@@ -10,20 +10,7 @@
  */
 int _putchar(char c)
 {
-	static char buff_size[1024];
-	static int num;
-
-	if (c == -1 || num >= 1024)
-	{
-		write(1, &buff_size, num);
-		num = 0;
-	}
-	if (c != -1)
-	{
-		buff_size[num] = c;
-		num++;
-	}
-	return (1);
+	return (write(1, &c, 1));
 }
 
 /**
