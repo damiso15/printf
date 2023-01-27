@@ -2,7 +2,7 @@
 
 /**
  * _printf_s - a function that prints a string to stdout.
- * @str: the string to print
+ * @str: the string to print.
  * Return: 0 as (Success)
  */
 int _printf_s(va_list str)
