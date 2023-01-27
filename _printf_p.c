@@ -2,7 +2,7 @@
 
 /**
  * _printf_p - a function that prints the address of a memory to stdout.
- * @p: the memory address to print
+ * @p: the memory address to print.
  * Return: the counter
  */
 int _printf_p(va_list p)
