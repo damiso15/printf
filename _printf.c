@@ -2,7 +2,7 @@
 
 /**
  * format_checker - a function to check if the format specifier is valid.
- * @format: the format to check
+ * @format: the format to check.
  * Return: a pointer to the format
  */
 int (*format_checker(const char *format))(va_list)
