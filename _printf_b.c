@@ -2,7 +2,7 @@
 
 /**
  * _printf_b - a function to print a binary number to stdout.
- * @bin: unsigned int being converted to binary
+ * @bin: unsigned int being converted to binary.
  * Return: the total number of the printed number
  */
 int _printf_b(va_list bin)
