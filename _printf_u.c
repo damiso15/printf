@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_u - a function that prints an usigned int to stdout.
+ * _printf_u - a function that prints an unsigned int to stdout.
  * @un_i: an unsigned int to print
  * Return: the total number of integer
  */
