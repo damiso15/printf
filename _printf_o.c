@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_o - a function that prints octal format to stdout
+ * _printf_o - a function that prints octal format to stdout.
  * @oct: the integer to conver to octal
  * Return: the counter
  */
