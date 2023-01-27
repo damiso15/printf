@@ -2,7 +2,7 @@
 
 /**
  * _printf_o - a function that prints octal format to stdout.
- * @oct: the integer to conver to octal
+ * @oct: the integer to conver to octal.
  * Return: the counter
  */
 int _printf_o(va_list oct)
