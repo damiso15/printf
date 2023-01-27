@@ -2,7 +2,7 @@
 
 /**
  * _printf_i - a function that prints a decimal number in base 10 to stdout.
- * @i: the base 10 decimal to print
+ * @i: the base 10 decimal to print.
  * Return: the total number of the decimals
  */
 int _printf_i(va_list i)
