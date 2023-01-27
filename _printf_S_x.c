@@ -2,7 +2,7 @@
 
 /**
  * _printf_S_x - a function that prints Non printable characters
- * @num: the non printable characters to print
+ * @num: the non printable characters to print.
  * Return: counter
  */
 int _printf_S_x(unsigned int num)
