@@ -2,7 +2,7 @@
 
 /**
  * _printf_S - a function that prints strings and ASCII characters to stdout.
- * @S: the string to print
+ * @S: the string to print.
  * Return: counter
  */
 int _printf_S(va_list S)
