@@ -2,7 +2,7 @@
 
 /**
  * _printf_u - a function that prints an unsigned int to stdout.
- * @un_i: an unsigned int to print
+ * @un_i: an unsigned int to print.
  * Return: the total number of integer
  */
 int _printf_u(va_list un_i)
