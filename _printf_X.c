@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf_X - a function that prints lowercase hexadecimal to stdout
+ * _printf_X - a function that prints lowercase hexadecimal to stdout.
  * @upp_hex: the input character to convert to hexadecimal
  * Return: the counter
  */
