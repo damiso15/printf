@@ -2,7 +2,7 @@
 
 /**
  * _printf_r - a function that prints a string in reverse to stdout.
- * @rev: the string to reverse
+ * @rev: the string to reverse.
  * Return: counter
  */
 int _printf_r(va_list rev)
